@@ -1,0 +1,340 @@
+* {
+
+    --main-color: #02391e;
+    --secondry-color: #f3952f;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.intro {
+    width: 100%;
+    background-color: #02391e;
+
+
+}
+
+.intro .container {
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.intro ul {
+    display: flex;
+    margin-top: 25px;
+
+}
+
+.intro ul i {
+    color: #f3952f;
+}
+
+.intro ul li {
+    margin-left: 60px;
+    font-size: 1rem;
+    list-style: none;
+    transition: all 0.4s 0s;
+}
+
+.intro ul li:hover {
+    color: #f3952f;
+}
+
+.intro a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.logo {
+    width: 80px;
+    transform: scale(1.5);
+}
+
+.letter {
+    color: #f3952f !important;
+}
+
+/*second section*/
+.second-section {
+
+    display: flex;
+    background-image: url(../pictures/train.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.left-section {
+    width: 60%;
+
+
+}
+
+.left-section img {
+    width: 800px;
+}
+
+.right-section {
+    width: 40%;
+
+
+}
+
+.right-section li {
+    list-style: none;
+}
+
+/*third section*/
+.solution {
+    height: 100vh;
+    width: 100%;
+}
+
+.left-solution {
+    width: 50%;
+
+
+}
+
+.right-solution {
+    width: 50%;
+}
+
+.reveal-left {
+    position: relative;
+
+}
+
+.layer {
+    width: 300px;
+    height: 300px;
+    background-color: #f3952f;
+    z-index: -1;
+    bottom: -10%;
+    left: -40px;
+}
+
+.layer2 {
+    width: 300px;
+    height: 300px;
+    background-color: #02391e;
+    z-index: -1;
+    top: -10%;
+    right: -10px;
+}
+
+.model {
+    width: 600px;
+}
+
+.haven {
+
+    font-size: 5rem;
+    color: #02391e;
+    text-transform: uppercase;
+}
+
+.found {
+    color: #02391e;
+}
+
+.welcome-haven {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: #02391e;
+}
+
+.haven-feature {
+    background-image: url(../pictures/sus-background2.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 70px;
+}
+
+/*fetures*/
+.feature-topic {
+    color: #02391e;
+    position: relative;
+    font-size: 3rem;
+
+}
+
+.carousel {
+    overflow: hidden;
+    border-radius: 14px;
+    opacity: 0.8;
+}
+
+.feature-topic::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 120px;
+    height: 2px;
+    background-color: #f3952f;
+    transform: translateX(-50%);
+
+
+}
+
+.feature-boxs {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 30px;
+    margin: 0 100px;
+    justify-content: center;
+
+}
+
+.feature-boxs .box {
+    flex-basis: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 14px;
+    background-color: #f3952f;
+}
+
+.feature-boxs .box img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.feature-boxs .box .box-text {
+    position: absolute;
+    bottom: -200%;
+    background-color: rgba(2, 57, 30, 0.8);
+    width: 100%;
+    transition: 0.3s;
+    height: 100%;
+
+    color: #f3952f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-boxs .box .box-text h6 {
+    color: #f3952f;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.feature-boxs .box:hover .box-text {
+    bottom: 0;
+
+}
+
+.feature-boxs .box:hover img {
+
+    transform: scale(1.1);
+}
+
+/*how does it work video*/
+video {
+    width: 100%;
+    position: relative;
+}
+
+/*sustainability part*/
+
+.sus-head {
+    color: #02391e;
+    position: relative;
+    font-size: 3rem;
+}
+
+.article-section {
+    background: #ffffff;
+    color: #333;
+    padding: 50px;
+    text-align: center;
+    background-image: url(../pictures/sgd-back3.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.article-section h1 {
+
+    margin-bottom: 10px;
+
+    color: #02391e;
+    position: relative;
+    font-size: 3rem;
+}
+
+.article-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #02391e;
+    text-transform: capitalize;
+
+
+}
+
+/* Animated Div Section Styles */
+.scroll-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0;
+    background-color: #adc5b9;
+
+
+
+}
+
+.animated-div {
+    width: 80%;
+    height: 100px;
+    background: #02391e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.animated-div.left {
+    transform: translateX(-100px);
+}
+
+.animated-div.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*contact us part*/
+.contactUs {
+    height: 200px;
+    width: 100%;
+    background-color: #02391e;
+    color: #FFF;
+
+}
+
+.contactUs i {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #f3952f;
+}
