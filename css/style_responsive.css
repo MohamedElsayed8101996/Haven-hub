@@ -299,7 +299,15 @@ video{
     margin-top: 10px;
     color: #f3952f;
 }
-/* Responsive adjustments */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+    .right-solution{
+        margin-left: 50px;
+    }
+
+  }
+  
+
 
 /* General adjustments for small screens */
 @media (max-width: 768px) {
@@ -318,6 +326,7 @@ video{
     .intro .logo {
         width: 60px;
     }
+    
     .second-section {
         flex-direction: column;
     }
@@ -327,12 +336,24 @@ video{
     .left-section img {
         width: 100%;
     }
-    .solution .left-solution, .solution .right-solution {
+    .solution .container{
+        flex-direction: column;
+    }
+    .solution .left-solution  {
         width: 100%;
         text-align: center;
     }
+    .solution .right-solution{
+        width: 100%;
+        text-align: center;
+
+    }
+    .solution .right-solution h1{
+        display: none;
+
+    }
     .model {
-        width: 80%;
+        width: 100%;
     }
     .feature-boxs {
         grid-template-columns: 1fr;
@@ -342,13 +363,13 @@ video{
         margin-bottom: 20px;
     }
     .contactUs {
-        flex-direction: column;
+       
         height: auto;
         text-align: center;
     }
-    .contactUs h2, .contactUs i {
-        margin-bottom: 15px;
-    }
+   
+    
+    
 }
 
 /* Adjustments for very small screens */
